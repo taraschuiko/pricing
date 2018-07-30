@@ -20,9 +20,14 @@ body {
 		padding: 30px 5%;
 		-webkit-border-radius: 6px;
 		        border-radius: 6px;
+		-webkit-transition: background .2s cubic-bezier(0.22, 0.61, 0.36, 1);
+		   -moz-transition: background .2s cubic-bezier(0.22, 0.61, 0.36, 1);
+		    -ms-transition: background .2s cubic-bezier(0.22, 0.61, 0.36, 1);
+		     -o-transition: background .2s cubic-bezier(0.22, 0.61, 0.36, 1);
+		        transition: background .2s cubic-bezier(0.22, 0.61, 0.36, 1);
 		
 		&:hover {
-			background: darken(#fff, 8%);
+			background: darken(#fff, 6%);
 			cursor: pointer;
 		}
 		
