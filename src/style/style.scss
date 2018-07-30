@@ -1,0 +1,84 @@
+body {
+	background: #81A2D9;
+	font-family: 'Roboto';
+}
+
+.pricing {
+	background: #FFF;
+	margin-top: 16%;
+	padding: 30px 30px;
+	text-align: center;
+	-webkit-border-radius: 6px;
+	        border-radius: 6px;
+	
+	// shadow
+	-webkit-box-shadow: 0px 0px 82px -18px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 82px -18px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 82px -18px rgba(0,0,0,0.75);
+	
+	&-item {
+		padding: 30px 5%;
+		-webkit-border-radius: 6px;
+		        border-radius: 6px;
+		
+		&:hover {
+			background: darken(#fff, 8%);
+			cursor: pointer;
+		}
+		
+		&__icon {
+			height: 70px;
+		}
+
+		&__title {
+			text-transform: uppercase;
+			color: #5A68DD;
+			font-size: 22px;
+			letter-spacing: 3px;
+			margin-top: 34px;
+			font-weight: 700;
+		}
+
+		&__description {
+			margin-top: 14px;
+			font-size: 15px;
+			color: #A7A8B5;
+			font-weight: 400;
+		}
+
+		&__price {
+			-webkit-transform: translateX(-6.5%);
+			-moz-transform: translateX(-6.5%);
+			-ms-transform: translateX(-6.5%);
+			-o-transform: translateX(-6.5%);
+			transform: translateX(-6.5%);
+		}
+
+		&__price p {
+			color: #5A68DD;
+			font-size: 36px;
+			font-weight: 700;
+			position: relative;
+			display: inline;
+			
+			&:before {
+				content: "$";
+				font-size: 16px;
+				display: block;
+				position: absolute;
+				top: 2px;
+				right: 104%;
+			}
+
+			&:after {
+				content: " /month";
+				font-size: 16px;
+				display: block;
+				position: absolute;
+				bottom: 2px;
+				left: 100%;
+				
+			}
+		}
+	}
+}
